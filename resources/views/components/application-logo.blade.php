@@ -1,0 +1,1 @@
+<img src="{{ asset('images/vant_logo.svg') }}" alt="Vant Calendar" {{ $attributes->merge(['class' => 'h-70 w-auto']) }}>
