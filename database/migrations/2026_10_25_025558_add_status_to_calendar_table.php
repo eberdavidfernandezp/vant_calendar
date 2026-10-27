@@ -1,0 +1,24 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        Schema::table('calendar', function (Blueprint $table) {
+            // Añadimos la columna user_id vinculada a la tabla users
+            $table->foreignId('user_id')->nullable()->after('id_calendar')->constrained('users')->onDelete('cascade');
+        });
+    }
+
+    public function down()
+    {
+        Schema::table('calendar', function (Blueprint $table) {
+            $table->dropForeign(['user_id']);
+            $table->dropColumn('user_id');
+        });
+    }
+};
