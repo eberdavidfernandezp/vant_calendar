@@ -3,6 +3,7 @@
 use App\Http\Controllers\CalendarController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\VantEcosystemController;
 
 // Redirección inicial
 Route::get('/', function () {
@@ -29,6 +30,15 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+// Módulo Público VANT | VENEZUELA
+Route::get('/', [VantEcosystemController::class, 'home'])->name('vant.home');
+Route::get('/quienes-somos', [VantEcosystemController::class, 'about'])->name('vant.about');
+Route::get('/portfolio', [VantEcosystemController::class, 'portfolio'])->name('vant.portfolio');
+Route::get('/chat-cotizacion', [VantEcosystemController::class, 'chatQuote'])->name('vant.chat');
+
+// Endpoint para el despacho del Chat a WhatsApp o Gmail
+Route::post('/vant/dispatch-lead', [VantEcosystemController::class, 'dispatchLead'])->name('vant.dispatch.lead');
 
 // Rutas de autenticación (Login, Registro, Password Reset)
 require __DIR__.'/auth.php';
