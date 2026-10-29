@@ -30,7 +30,7 @@
         </div>
         <nav style="display: flex; flex-direction: column; gap: 2rem; font-size: 1rem; font-weight: bold; letter-spacing: 0.1em; text-transform: uppercase;">
             <a href="{{ route('vant.home') }}" class="vant-nav-link" style="color: #F0F1F2; text-decoration: none;">HOME</a>
-            <a href="{{ route('vant.portfolio') }}" class="vant-nav-link" style="color: #BFC0C0; text-decoration: none;">PORTFOLIO</a>
+            <a href="#" class="vant-nav-link" style="color: #BFC0C0; text-decoration: none;">PORTFOLIO</a>
             <a href="{{ route('calendar.index') }}" class="vant-nav-link" style="color: #5A738E; text-decoration: none;">VANT CALENDAR</a>
         </nav>
     </div>

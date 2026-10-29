@@ -16,6 +16,10 @@
         color: #B20000;
     }
 
+    .description{
+        color: #e5e5e7;
+    }
+
     @media (min-width: 1024px) {
         .space-y-1> :not([hidden])~ :not([hidden]) {
             --tw-space-y-reverse: 0;
@@ -50,7 +54,7 @@
             </div>
 
             <div class="space-y-1">
-                <p>
+                <p class="description">
                     En un mercado saturado de agencias que priorizan la decoración visual sobre la rentabilidad, en VANT operamos bajo una premisa matemática, arquitectónica y de ingeniería visual.
                     <br>
                     No diseñamos solo por estética ni creamos contenido para llenar un feed vacío: estructuramos sistemas digitales de alto rendimiento.

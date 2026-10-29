@@ -59,13 +59,13 @@
 
                 <div class="flex flex-col space-y-2 text-base md:text-lg font-bold text-[#1C1C1E] tracking-wider">
                     <!-- Instagram -->
-                    <a href="https://instagram.com/vant_vzla" target="_blank" class="flex items-center space-x-3 hover:text-[#5A738E] transition-colors duration-300 w-fit group">
+                    <a href="https://instagram.com/vant.vzla" target="_blank" class="flex items-center space-x-3 hover:text-[#5A738E] transition-colors duration-300 w-fit group">
                         <svg class="w-6 h-6 text-[#1C1C1E] group-hover:text-[#5A738E] transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                             <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                         </svg>
-                        <span>@vant_vzla</span>
+                        <span>@vant.vzla</span>
                     </a>
 
                     <!-- WhatsApp -->
